@@ -19,7 +19,7 @@ export function addEven(n) {
   let sum = 0 
 
  while (i<= n) {
-if (i % 2==0){ 
+if (i % 2==0){ //work out if its even
   sum +=i
 }
 i++ //i +i
