@@ -13,17 +13,15 @@
  */
 export function sumSelective(numbers) {
   // TODO
-  //sum of numbers in an array
-  //either are EVEN 
-  //or greater than ten 
-  // if even and greater than ten skip both 
-let sum = 0
-for (let n of numbers) {
-  if (n<10 && n %2===0) {
-    continue
-  }
-  sum +- n
-}
+  let result =0
+  
 
-return sum
+  for (let i = 0; i < numbers.length; i++) {
+    if ((numbers[i] >10) && (numbers[i] % 2===0)){
+    continue // don't do anything
+    } else if ((numbers[i] >10) || (numbers[i] % 2===0)){
+    result += numbers[i]
+  }
+}
+  return result
 }
