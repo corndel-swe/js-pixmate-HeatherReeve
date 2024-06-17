@@ -1,5 +1,9 @@
-const width = 5
-const height = 7
+let width = 5 
+let height = 7
+
+
+
+
 
 // make an outer loop for the rows
 for (let row = 0; row < height; row++) {
@@ -7,7 +11,7 @@ for (let row = 0; row < height; row++) {
   let line = ''
 
   // now make an inner loop to add things to the line
-  for (let col = 0; col < width; col++) {
+  for (let col = 0; col < width ; col++) {
     line += 'x'
   }
 

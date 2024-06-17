@@ -16,5 +16,21 @@
  *                   Returns -1 if no such element is found or if the array is empty.
  */
 export function stepDown(numbers) {
-  // TODO
+  // look through list of numbers
+  // for each number check
+  // is it smaller than the one before it 
+  // if yes what is its index
+  //if no try the next one 
+  //what if there is not one return -1
+
+
+  for (let i=1; i< numbers.length;i++) //i=1 skipd first number so doesn't go omg there's nothing before this
+
+  if (numbers [i] < numbers[i - 1]) {
+    return i
+
+  }
+  return -1
+
 }
+  
