@@ -1,18 +1,26 @@
 let width = 5 
-let height = 7
 
+ for (let row = 1; row <= width; row++) {
+  let line = ''
+
+  for (let col = 0; col < row; col++) {
+    line += '*'
+  
+  } 
+  console.log(line)
+}
 
 
 
 
 // make an outer loop for the rows
-for (let row = 0; row < height; row++) {
+for (let row = width; row > 1; row--) {
   // make a new empty line for each row
   let line = ''
 
   // now make an inner loop to add things to the line
-  for (let col = 0; col < width ; col++) {
-    line += 'x'
+  for (let col = 1; col < row ; col++) {
+    line += '*'
   }
 
   // each time the inner loop has finished, print the line

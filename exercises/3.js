@@ -17,4 +17,11 @@
  */
 export function gridLimit(grid) {
   // TODO
+  //search through grid array
+  for (let i=1; i< grid.length;i++)
+
+  //find numbers larger than 10
+  if (grid [1] <10)
+  //count how many are larger than 10
+coun
 }

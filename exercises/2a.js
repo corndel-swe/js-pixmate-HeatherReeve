@@ -13,4 +13,15 @@
  */
 export function sumSelective(numbers) {
   // TODO
+  let result =0
+  
+
+  for (let i = 0; i < numbers.length; i++) {
+    if ((numbers[i] >10) && (numbers[i] % 2===0)){
+    continue // don't do anything
+    } else if ((numbers[i] >10) || (numbers[i] % 2===0)){
+    result += numbers[i]
+  }
+}
+  return result
 }
